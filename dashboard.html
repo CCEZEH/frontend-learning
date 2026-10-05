@@ -1,0 +1,70 @@
+<DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = content = "width = device-width, initial-scale = 1.0">
+    <title>Dashboard - Professional Bank</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Professional Bank</h1>
+        <nav>
+            <a href = "index.html">Home</a>
+            <a href = "dashboard.html">Dashboard</a>
+            <a href = "login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome, Customer</h2>
+            <p>Welcome to your Professional Bank dashboard.</p>
+        </section>
+
+        <section>
+            <h2>Account Balance</h2>
+            <h1 id = "balance">#250,000.00</h1>
+            <p>Available Balance</p>
+        </section>
+        
+        <section>
+            <h2>Quick Actions</h2>
+
+            <button onclick = "showDepositForm()">Deposit</button>
+            <button>Withdraw</button>
+            <button>Transfer</button>
+            <button>Transactions</button>
+
+            <div id = "depositForm">
+                <h3>Deposit Money</h3>
+                <label for = "depositAmount">Amount</label>
+                <br>
+                <input
+                    type = "number"
+                    id = "depositAmount"
+                    placeholder = "Enter amount"
+                >
+                <br><br>
+                <button onclick = "depositMoney()">Confirm Deposit</button>
+                <p id = "depositMessage"></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Recent Transactions</h2>
+
+            <p>Deposit - #100,000</p>
+            <p>Transfer - #20,000</p>
+            <p>Withdrawal - 10,000</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Professional Bank. All right reserved.</p>
+    </footer>
+    <script src = "script.js"></script>
+</body>
+</html>
